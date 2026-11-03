@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Data and results (kept on Google Drive, not in the repository)
+inputs/
+outputs/
+resources/
+*.h5ad
+*.h5
+*.tif
+*.tiff
+*.tar
+*.tar.gz
+*.parquet
+*.csv.gz

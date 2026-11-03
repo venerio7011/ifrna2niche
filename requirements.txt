@@ -1,0 +1,29 @@
+# codex_rna.ipynb — Python environment (Google Colab, Python 3.12)
+#
+# Section 0 of the notebook installs these with Colab's own numpy / pandas / scipy versions
+# pinned (pins.txt), so pip picks a compatible anndata 0.12.x. scanpy is not used.
+
+# core
+numpy>=1.26
+pandas>=2.2,<2.3
+scipy>=1.11
+scikit-learn>=1.3
+matplotlib>=3.8
+pyarrow>=14                      # parquet cache of the CODEX csv (optional)
+
+# clustering / integration
+anndata>=0.10,<0.13
+igraph>=0.11
+leidenalg>=0.10
+pynndescent>=0.5
+umap-learn>=0.5
+harmonypy>=0.0.10                # tested with 2.1.0
+
+# mapping and niche remapping (sections 9–12)
+maxfuse>=0.0.1
+pyreadr>=0.5                     # reads the NicheNet v2 .rds resources
+
+# optional: scMODAL route (section 9-1, METHOD='scmodal'; GPU recommended)
+#   git clone https://github.com/gefeiwang/scMODAL.git and add it to sys.path
+# annoy
+# torch>=2.1
